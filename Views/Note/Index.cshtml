@@ -1,0 +1,23 @@
+﻿@model IEnumerable<Note>
+
+<h2>Notes</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Value</th>
+            <th>Priority</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var note in Model)
+        {
+            <tr>
+                <td>@note.Name</td>
+                <td>@note.Value</td>
+                <td>@note.Priority</td>
+            </tr>
+        }
+    </tbody>
+</table>
